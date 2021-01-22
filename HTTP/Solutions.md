@@ -20,4 +20,4 @@
 
  Se rendre à l'adresse [Évaluation UQAM - volet enseignant](https://www.apps.uqam.ca/application/evalens/login/login.aspx?EVL_TYPE_UTILISATEUR=ENS) -> `Google Chrome DevTools` -> `Network` -> `Headrs` -> `Stop recording network log` -> entrer des authentifiants et se connecter.
 
- ![](./img/exo5.png)
+ ![](./img/ex5.png)
