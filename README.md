@@ -6,8 +6,8 @@ Correction des ateliers d'INF5190
 - Deuxième séance : Introduction à [Python](./Python)
 
 ## Liens utiles
-https://docs.python.org/3/
-https://code.visualstudio.com/docs/python/editing
+- https://docs.python.org/3/
+- https://code.visualstudio.com/docs/python/editing
 
 
 ## Licence
