@@ -16,8 +16,8 @@ def lire_fichier(liste_clients, liste_articles):
                 numero_client, nom_article, quantite, prix, taxe_possible = ligne.split(' ')
             else:
                  numero_client, nom_article, quantite, prix = ligne.split(' ')
-            quantite = int(quantite)
-            prix = float(prix)
+            quantite = int(quantite) # Conversion String -> int
+            prix = float(prix) # Conversion String -> float
             creer_client(numero_client, nom_article, quantite, liste_clients)
             creer_liste_articles(nom_article, prix, taxe_possible, liste_articles)
     lignes.close()
@@ -35,6 +35,7 @@ def creer_facture(liste_clients, liste_articles):
         total_facture = 0
         total_articles = 0
 
+        # La liste d'articles du client X dans la commande
         for cle,valeur in client.liste_article_client.items():
             total_articles += valeur
 
@@ -49,6 +50,8 @@ def creer_facture(liste_clients, liste_articles):
 
             nb_article +=1
         facture_client.write(NEW_LINE)
+
+        # A partir d'ici : verification si le rabais est applicable
         if total_articles >= 100:
             facture_client.write("Total avant rabais:".ljust(20) + "{:10f}".format(
                 Decimal(total_facture).quantize(Decimal('.01'))) + NEW_LINE
@@ -74,7 +77,7 @@ def main():
     creer_facture(liste_clients, liste_articles)
 
 
-main()
+main() # Point d'entrée du programme
 
 
 

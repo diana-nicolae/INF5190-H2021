@@ -1,5 +1,5 @@
-TAXE_FED = 0.05
-TAXE_PROV = 0.09975
+TAXE_FED = 0.05 # Constante pour la taxe federale
+TAXE_PROV = 0.09975 # Constante pour la taxe provinciale du Québéc
 
 
 class Article(object):
@@ -13,10 +13,11 @@ class Article(object):
 def creer_liste_articles (nom_article, prix, taxe_possible, liste_articles):
     for article in liste_articles:
         if article.nom_article ==  nom_article:
-            return
+            return # L'article existe déjà -> on peut sortir de la fonction
+    #Vérifier quelles taxes sont applicables
     indicateur_taxe_fed = False
     indicateur_taxe_prov = False
-    taxe_possible = taxe_possible.rstrip('\n')
+    taxe_possible = taxe_possible.rstrip('\n') # Enlever les retours à la ligne
 
     if taxe_possible == "FP":
         indicateur_taxe_fed = True
@@ -33,7 +34,7 @@ def creer_liste_articles (nom_article, prix, taxe_possible, liste_articles):
 def chercher_article(nom_article, quantite, liste_articles):
     liste_prix= []
     for article in liste_articles:
-        if article.nom_article == nom_article:
+        if article.nom_article == nom_article: # Article trouvé -> On récupère le prix + on clacule le total en fct de la quantité et des taxes
             liste_prix.append(article.prix_unitaire)
             prix_quantite = article.prix_unitaire * quantite
             montant_taxe_fed = 0.0
