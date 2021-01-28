@@ -1,0 +1,11 @@
+Client numéro 0099
+
+               Numero de produit            Qte           Prix     Total (tx)
+Produit #1     RTU43245                    35          69.99        2816.49
+Produit #2     RCU83364                     7         169.99        1249.43
+Produit #3     POP64483                    12           1.99          26.26
+Produit #4     KOP77442                   100          10.99        1099.00
+
+Total avant rabais:    5191.17
+Rabais:                 778.68
+Total:                 4412.50
