@@ -10,6 +10,10 @@
     <h3>YO!</h3>
     <p>Répondez au questionnaire, tous les champs sont obligatoires !!!!</p>
 
+    {% if error %}
+       <p style="color:#F00">{{error}}</p>
+    {% endif %}
+
     <form action="/" method="POST">
     <label for="champ-text">Text</label>
     <input type="text" id="champ-text" name="text">
