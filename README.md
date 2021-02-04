@@ -8,7 +8,7 @@ Correction des ateliers d'INF5190
 ## Liens utiles
 - https://docs.python.org/3/
 - https://code.visualstudio.com/docs/python/editing
-
+- https://flask-wtf.readthedocs.io/en/stable/form.html
 
 ## Licence
 Apache 2.0 : Vous êtes libres d'utiliser, modifier et distribuer ce code, tant que vous citez &copy; l'auteur original.
