@@ -1,0 +1,3 @@
+text : Salut!!!
+radio : True
+select : choix2
