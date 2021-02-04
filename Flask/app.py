@@ -27,7 +27,7 @@ def formulaire():
         radio2 = request.form.getlist("dchoix") != None
         select = request.form.get("liste-choix")
         #verification simple des champs non vide
-        if text == "" or (radio1 is None and radio2 is None) or select is None:
+        if text == "" or (radio1 == "" and radio2 == "") or select == "":
             #envoyer une variable interprétable par Jinja2
             return render_template("formulaire.html", error="Tous les champs sont obligatoires!")
             #Plusieurs autres validations peuvent etre faites de la meme façon
