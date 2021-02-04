@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Exercice INF5190">
+    <title>Flask App</title>
+</head>
+<body>
+
+    <h3>YO!</h3>
+    <p>Répondez au questionnaire, tous les champs sont obligatoires !!!!</p>
+
+    <form action="/" method="POST">
+    <label for="champ-text">Text</label>
+    <input type="text" id="champ-text" name="text">
+    <br>
+    <br>
+    <label for="champ-radio">Radio</label>
+    <div class="choix">
+      <label for="choix1">1 : Premier choix</label>
+      <input type="radio" name="pchoix" id="choix1">
+      <br>
+      <br>
+      <label for="choix2">2 : Deuxième choix</label>
+      <input type="radio" name="dchoix" id="choix2">
+    </div>
+    <br>
+    <br>
+    <label for="champ-liste">Liste</label>
+    <select name="liste-choix" id="choix">
+      <option hidden value=""> On vous donne plusieur choix </option>
+      <option value="choix1">Choix 1</option>
+      <option value="choix2">Choix 2</option>
+      <option value="choix3">Choix 3</option>
+      <option value="choix4">Choix 4</option>
+    </select>
+    <br>
+    <br>
+    <input type="submit" value="soumettre">
+    </form>
+    
+</body>
+</html>
