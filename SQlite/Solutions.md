@@ -3,6 +3,7 @@
 ### Pour créer la base de données :
 
 1. Telecharger sqlite3 :
+
 *MACOS* : 
 ```
 brew install sqlite3
