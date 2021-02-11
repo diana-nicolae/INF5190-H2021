@@ -15,7 +15,7 @@ flask run
 export FLASK_ENV=developpement
 ```
 
-**RQ : ** la commande `make run` permet de rouler toutes ses étapes.
+**RQ :** la commande `make run` permet de rouler toutes ses étapes.
 
 
 4. La commande `pip freeze > requirements.txt` permet de lister toutes les librairies (et leurs versions) utilisées par l'application et de rediriger le contenu vers le fichier `requirements.txt`
