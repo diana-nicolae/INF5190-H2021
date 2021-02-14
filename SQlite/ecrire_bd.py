@@ -10,16 +10,14 @@ with open ('input.txt','r') as infile:
         #on recupere les donnees du fichier en les separant par '|'
         splitted_line = line.split('|')
         #on essaye de matcher le nom d'artiste dans le fichier avec celui dans la base de donnees
-        #si il existe on selectionne son id
-        cursor.execute("select id from artiste where nom like ?", ('%'+splitted_line[0]+'%',))
+        cursor.execute("select * from artiste where nom like ?", ('%'+splitted_line[0]+'%',))
         #on fetch les artistes qui matchent (si ils existent)
         existe =cursor.fetchall()
         if existe:
             #on recupere l'id
             artiste_id = cursor.fetchone()
-            #on update les donnees de l'artiste correspondant a artiste_id
-            cursor.execute (('update  album set titre = ?, annee = ? where artiste_id like ?'), (splitted_line[1], splitted_line[2], artiste_id))
-            #cursor.execute(("insert into album(titre,annee,artiste_id)" "values(?,?,?)"),(splitted_line[1], splitted_line[2], artiste_id))
+            #on update les donnees de l'artiste correspondant a artiste_id en ajoutant le nouvel album à la table album
+            cursor.execute(("insert into album(titre,annee,artiste_id)" "values(?,?,?)"),(splitted_line[1], splitted_line[2], artiste_id))
             #on commmit les changements
             connection.commit()
         else:
