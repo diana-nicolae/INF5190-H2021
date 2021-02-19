@@ -30,4 +30,5 @@ with open ('input.txt','r') as infile:
             #a partir de l'id du dernier artiste ajouté on ajoute son album a la table album
             cursor.execute(("insert into album(titre,annee,artiste_id)" "values(?,?,?)"),(splitted_line[1], splitted_line[2], last_id))
             connection.commit()
+infile.close()
 connection.close()
