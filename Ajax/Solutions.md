@@ -21,11 +21,11 @@ Pour créer la table de la base de données et y ajouter des données :
 ```
 sqlite3 database.db
 > .tables
->. exit
+> .exit
 ```
 2. Pour afficher le contenu de la table : 
 ```
 sqlite3 database.db
 > select * from person;
->. exit
+> .exit
 ```
