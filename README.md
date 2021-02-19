@@ -6,6 +6,7 @@ Correction des ateliers d'INF5190
 - Deuxième séance : Introduction à [Python](./Python)
 - Troisième séance : Introduction à [Flask](./Flask)
 - Quatrième séance : Manipulation des Bases de données [SQLite](./SQlite)
+- Cinquième séance : Appels [Ajax](./Ajax)
 
 ## Liens utiles
 - https://docs.python.org/3/
@@ -14,6 +15,7 @@ Correction des ateliers d'INF5190
 - https://flask-wtf.readthedocs.io/en/stable/quickstart.html
 - https://flask.palletsprojects.com/en/1.1.x/patterns/wtforms/
 - https://github.com/lepture/flask-wtf
+- https://flask-sqlalchemy.palletsprojects.com/en/2.x/
 
 
 ## Licence
