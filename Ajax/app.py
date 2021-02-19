@@ -20,6 +20,7 @@ class Person(db.Model):
     country = db.Column(db.String(50), nullable=False)
     birth_town = db.Column(db.String(80), nullable=False)
 
+
 @app.route('/')
 def home():
     persons = Person.query.all()
@@ -31,11 +32,10 @@ def get_info(id):
     return render_template ("infos.html", p=p)
 
 
+
 #@app.route('/<string:name>')
 #def get_person(name):
     #p = Person.query.filter_by(name=name).first_or_404()
     #return f"Les informations : {p.name},{p.sex}, {p.age}, {p.country}, {p.birth_town}"
-
-
 
 
