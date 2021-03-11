@@ -7,6 +7,7 @@ Correction des ateliers d'INF5190
 - Troisième séance : Introduction à [Flask](./Flask)
 - Quatrième séance : Manipulation des Bases de données [SQLite](./SQlite)
 - Cinquième séance : Appels [Ajax](./Ajax)
+- Sixième séance : [Authetification](./Authentification)
 
 ## Liens utiles
 - https://docs.python.org/3/
@@ -16,6 +17,8 @@ Correction des ateliers d'INF5190
 - https://flask.palletsprojects.com/en/1.1.x/patterns/wtforms/
 - https://github.com/lepture/flask-wtf
 - https://flask-sqlalchemy.palletsprojects.com/en/2.x/
+- https://flask.palletsprojects.com/en/1.1.x/patterns/flashing/
+- https://flask-bcrypt.readthedocs.io/en/latest/
 
 
 ## Licence
