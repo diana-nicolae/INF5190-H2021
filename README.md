@@ -16,6 +16,8 @@ Correction des ateliers d'INF5190
 - https://flask.palletsprojects.com/en/1.1.x/patterns/wtforms/
 - https://github.com/lepture/flask-wtf
 - https://flask-sqlalchemy.palletsprojects.com/en/2.x/
+- https://flask.palletsprojects.com/en/1.1.x/patterns/flashing/
+- https://flask-bcrypt.readthedocs.io/en/latest/
 
 
 ## Licence
