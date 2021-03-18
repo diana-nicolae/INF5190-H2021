@@ -50,9 +50,8 @@ class User(db.Model):
     email = db.Column(db.String(120), unique=True, nullable=False)
     date_publication = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     mdp = db.Column(db.String(60), nullable=False)
-
-
-
+    confirmed = db.Column(db.Boolean, nullable=False, default=False)
+"""
 
 class Inscription(FlaskForm):
     nom = StringField("Nom de l'utilisateur", validators=[DataRequired()])
@@ -119,3 +118,4 @@ def logout():
     logout_user()
     flash('Vous etes déconnecté !', 'success')
     return redirect(url_for('home'))
+    """
