@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dossier>
+    <nom>El-Heni</nom>
+    <prenom>Ela</prenom>
+    <NAM>ELHE19191919</NAM>
+    <naissance>24-07-1994</naissance>
+    <medecin>
+        <nom>Maurice</nom>
+        <prenom>Alex</prenom>
+        <identifiant>DRALMAUR8907645</identifiant>
+        <ville>Montréal</ville>
+    </medecin>
+    <visites>
+        <visite>
+            <date>19-12-2020</date>
+            <sujet>Grippe</sujet>
+            <description>Maux de tete, mais rien d'alarmant. Des calmants ont été prescrits.</description>
+        </visite>
+        <visite>
+            <date>09-02-2021</date>
+            <sujet>Covid-19</sujet>
+            <description>La patiente hallucine, elle n'a rien.</description>
+        </visite>
+    </visites>
+</dossier>
