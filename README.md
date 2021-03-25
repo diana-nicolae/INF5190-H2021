@@ -8,6 +8,9 @@ Correction des ateliers d'INF5190
 - Quatrième séance : Manipulation des Bases de données [SQLite](./SQlite)
 - Cinquième séance : Appels [Ajax](./Ajax)
 - Sixième séance : [Authetification](./Authentification)
+- Huitième séance : [Mails](./MailAuth) d'authentification
+- Neuvième séance : [XML](./XML) et [JSON](./JSON)
+- Dixième séance : Atelier de [soutien](./Soutien) pour le projet de session.
 
 ## Liens utiles
 - https://docs.python.org/3/
