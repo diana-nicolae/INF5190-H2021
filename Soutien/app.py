@@ -21,8 +21,10 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db/database.db'
 
 db = SQLAlchemy(app)
 
+#Une BD vide est disponible pour vos tests
+
 class Declarations(db.Model):
-    #TODO : arranger les types
+    #TODO : arranger les types des données
 
     id = db.Column(db.Integer, primary_key=True)
     num_declaration = db.Column(db.BigInteger, nullable=False)

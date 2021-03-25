@@ -25,11 +25,14 @@ def import_data():
   csv_file.close()
 
 def data_handler():
+    # Pour que ça soit telechargé chaque jour a minuit dans le backgroundshceduler
+    import_data()
+
     with open('declarations-exterminations-punaises-de-lit.csv', newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quoting=csv.QUOTE_NONE)
         for row in reader:
             #recuperation des variables
-            # TODO : conversion en format convivial pour la bd:
+            # TODO : conversion en format convivial pour la bd
             num_declaration=row[0]
             date_declaration=row[1]
             date_insp_vispre=row[2]
@@ -59,5 +62,4 @@ def data_handler():
 
 
 if __name__=='__main__':
-    import_data()
     data_handler()

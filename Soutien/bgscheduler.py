@@ -14,7 +14,7 @@
 
 #A3
 #BackgroundScheduler pour telecharger les données de la ville chaque jour à minuit
-#import des modules nécessaires
+#Ce bout de code peut etre deplacé à votre guise, faire attention aux imports circulaires
 
 #pip3 install appscheduler
 from apscheduler.schedulers.background import BackgroundScheduler
