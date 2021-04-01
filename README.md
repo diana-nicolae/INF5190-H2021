@@ -10,7 +10,8 @@ Correction des ateliers d'INF5190
 - Sixième séance : [Authetification](./Authentification)
 - Huitième séance : [Mails](./MailAuth) d'authentification
 - Neuvième séance : [XML](./XML) et [JSON](./JSON)
-- Dixième séance : Atelier de [soutien](./Soutien) pour le projet de session.
+- Bonus : Atelier de [soutien](./Soutien) pour le projet de session.
+- Dixième séance : Services [REST](./API)
 
 ## Liens utiles
 - https://docs.python.org/3/
